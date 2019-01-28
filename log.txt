@@ -1,0 +1,12 @@
+
+Greenwich:
+2019-01-28 13:37:02.098  INFO [-,a2058a4c791cf166,a2058a4c791cf166,false] 87989 --- [ctor-http-nio-3] com.sleuth.test.demo.DemoController      : Sending request to another controller. Set userId as an extra field: x-b3-user-id
+2019-01-28 13:37:02.140  INFO [-,a2058a4c791cf166,a2058a4c791cf166,false] 87989 --- [ctor-http-nio-3] com.sleuth.test.demo.DemoApplication     : User id in filter is: null
+2019-01-28 13:37:02.229  INFO [-,a2058a4c791cf166,6f2a3567a3746bcb,false] 87989 --- [ctor-http-nio-4] com.sleuth.test.demo.UserIdController    : Got into userId controller
+2019-01-28 13:37:02.277  INFO [-,a2058a4c791cf166,a2058a4c791cf166,false] 87989 --- [ctor-http-nio-3] com.sleuth.test.demo.DemoController      : User id from another controller is: 123
+
+Finchley:
+2019-01-28 13:38:42.714  INFO [-,ea901756ef83f1bd,ea901756ef83f1bd,false] 88004 --- [ctor-http-nio-3] com.sleuth.test.demo.DemoController      : Sending request to another controller. Set userId as an extra field: x-b3-user-id
+2019-01-28 13:38:42.758  INFO [-,ea901756ef83f1bd,ea901756ef83f1bd,false] 88004 --- [ctor-http-nio-3] com.sleuth.test.demo.DemoApplication     : User id in filter is: 123
+2019-01-28 13:38:42.854  INFO [-,ea901756ef83f1bd,8c544927d480688e,false] 88004 --- [ctor-http-nio-4] com.sleuth.test.demo.UserIdController    : Got into userId controller
+2019-01-28 13:38:42.897  INFO [-,ea901756ef83f1bd,ea901756ef83f1bd,false] 88004 --- [ctor-http-nio-3] com.sleuth.test.demo.DemoController      : User id from another controller is: 123
