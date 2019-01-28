@@ -18,7 +18,7 @@ public class DemoApplication {
 
     @Bean
     public WebClient myWebClient(final WebClient.Builder webClientBuilder) {
-        return webClientBuilder.baseUrl("http://localhost:8080")
+        return webClientBuilder.baseUrl("http://localhost:9090")
             .filter((request, exchangeFunction) -> {
                 final String userId = request.headers().getFirst(USER_ID_KEY);
                 log.info("User id in filter is: {}", userId);
